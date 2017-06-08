@@ -491,14 +491,15 @@ body {
   width: 1px; }
 
 .top-section {
-  padding: 1.5% 0; }
+  padding: 1.5% -10%; }
 
 .topicons {
   width: 50px;
   margin-top: 20px; }
 
 #logo {
-  width: 150px; }
+  width: 150px;
+  background-image: url("..img/logo/logo-white.svg"); }
 
 nav i.material-icons {
   font-size: 50px;
@@ -507,10 +508,14 @@ nav i.material-icons {
 nav {
   padding: 0 50px; }
 
+.navbar-fixed {
+  z-index: 1; }
+
 .containerx {
   width: 90vw;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 100; }
 
 .featured-container {
   background-color: #68268c;
@@ -529,14 +534,12 @@ nav {
 
 .main-story-container {
   margin: 0 auto;
-  border: 5px solid red;
   background-image: url(../img/featured/mainguy2.jpg);
   background-size: 800px;
   background-position: center;
   background-repeat: no-repeat;
   text-align: left;
-  padding: 30px;
-  width: 90%;
+  padding: 60px;
   max-width: 900px; }
   .main-story-container p {
     font-size: 12px;
@@ -550,7 +553,8 @@ nav {
     line-height: 90px; }
     .main-story-container h1:hover {
       color: #fb6754;
-      transition: 0.3s ease; }
+      transition: 0.3s ease;
+      text-decoration: none; }
   .main-story-container .subhead {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
@@ -563,7 +567,6 @@ nav {
 .substory-container {
   margin: 0 auto;
   padding: 1% 6%;
-  border: 5px solid green;
   max-width: 900px; }
   .substory-container .row {
     height: 200px; }
@@ -574,7 +577,12 @@ nav {
     font-size: 30px;
     text-align: left;
     height: 100%;
-    position: relative; }
+    position: relative;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cstyle%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-50%);}}%3C/style%3E%3Cpath fill='none' stroke='#f00' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 10em 6em;
+    background-size: auto 4px;
+    background-repeat: repeat-x;
+    border: 5px solid #68268c; }
   .substory-container p {
     font-size: 12px;
     font-family: 'roboto', sans-serif;
@@ -586,9 +594,6 @@ nav {
     position: absolute;
     right: 0px;
     bottom: 0px; }
-
-.col {
-  border: 5px solid thistle; }
 
 .side-nav {
   width: 50vw;

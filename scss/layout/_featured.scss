@@ -2,6 +2,7 @@
   width: 90vw;
   display: block;
   margin: 0 auto;
+  z-index: 100;
 }
 
 .featured-container {
@@ -23,14 +24,12 @@
 
 .main-story-container {
   margin: 0 auto;
-  border: 5px solid red;
   background-image: url(../img/featured/mainguy2.jpg);
   background-size: 800px;
   background-position: center;
   background-repeat: no-repeat;
   text-align: left;
-  padding: 30px;
-  width: 90%;
+  padding: 60px;
   max-width: 900px;
   & p {
     @include date;
@@ -40,6 +39,7 @@
     &:hover {
       color: $featured-color;
       transition: 0.3s ease;
+      text-decoration: none;
     }
   }
   & .subhead {
@@ -57,8 +57,8 @@
 .substory-container {
   margin: 0 auto;
   padding: 1% 6%;
-  border: 5px solid green;
   max-width: 900px;
+
   & .row {
     height: 200px;
   }
@@ -70,6 +70,11 @@
     text-align: left;
     height: 100%;
     position: relative;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cstyle%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-50%);}}%3C/style%3E%3Cpath fill='none' stroke='#f00' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 10em 6em;
+    background-size: auto 4px;
+    background-repeat: repeat-x;
+    border: 5px solid $background-color;
   }
   & p {
     @include date;
@@ -82,8 +87,4 @@
     bottom: 0px;
 
   }
-}
-
-.col {
-  border: 5px solid thistle;
 }
