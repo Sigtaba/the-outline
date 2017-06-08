@@ -1,12 +1,12 @@
-# _think with Google_
+# _Replica of The Outline website_
 
-#### _HTML CSS Materialize JQuery and JavaScript Webpage,_ _06.02.2017_
+#### _Practice with Sass,_ _06.08.2017_
 
-#### By _**Isabella Abatgis**_
+#### By _**Isabella Abatgis and Rose Sponseller**_
 
 ## Description
 
-A recreation of this webpage's front end: https://www.thinkwithgoogle.com/
+A recreation of this webpage's front end: https://www.theoutline.com/ incorporating Sass into our project, as well as Bourbon.
 
 ## Setup/Installation Requirements
 
@@ -17,11 +17,11 @@ A recreation of this webpage's front end: https://www.thinkwithgoogle.com/
 
 OR
 
-*_Open this link: https://sigtaba.github.io/think-with-google/ (materialize icons may not appear)
+*_Open this link: https://sigtaba.github.io/the-outline/ (materialize icons may not appear)
 
 ## Support and contact details
 
-_no known bugs_
+_Add later_
 
 ## Technologies Used
 
@@ -35,8 +35,12 @@ _JQuery_
 
 _Materialize_
 
+_Sass_
+
+_Bourbon_
+
 ### License
 
 *MIT*
 
-Copyright (c) 2017 **_Isabella Abatgis_**
+Copyright (c) 2017 **_Isabella Abatgis and Rose Sponseller_**
