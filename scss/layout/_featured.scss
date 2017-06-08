@@ -1,6 +1,89 @@
-
+.containerx {
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
+}
 
 .featured-container {
   background-color: $background-color;
   color: $white;
+  padding: 8% 0;
+}
+
+.toothy {
+  max-width: 100%;
+}
+.story-container {
+  width: 85%;
+  margin: 0 auto;
+  border: em(20) solid;
+  border-bottom-style: none;
+  border-color: $featured-color $featured-color $background-color $featured-color;
+}
+
+.main-story-container {
+  margin: 0 auto;
+  border: 5px solid red;
+  background-image: url(../img/featured/mainguy2.jpg);
+  background-size: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding: 30px;
+  width: 90%;
+  max-width: 900px;
+  & p {
+    @include date;
+  }
+  & h1 {
+    @include headline;
+    &:hover {
+      color: $featured-color;
+      transition: 0.3s ease;
+    }
+  }
+  & .subhead {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin-top: -25px;
+    font-weight: lighter;
+  }
+}
+
+.salmon {
+  color: $featured-color;
+}
+
+.substory-container {
+  margin: 0 auto;
+  padding: 1% 6%;
+  border: 5px solid green;
+  max-width: 900px;
+  & .row {
+    height: 200px;
+  }
+  & .col {
+    padding: 10px;
+    color: $white;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-align: left;
+    height: 100%;
+    position: relative;
+  }
+  & p {
+    @include date;
+  }
+  & img {
+    float: right;
+    width: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+  }
+}
+
+.col {
+  border: 5px solid thistle;
 }

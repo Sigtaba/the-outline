@@ -31,3 +31,17 @@
     @content;
   }
 }
+
+@mixin headline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 90px;
+}
+
+@mixin date {
+  font-size: 12px;
+  font-family: 'roboto', sans-serif;
+  text-align: left;
+  color: $white;
+}
