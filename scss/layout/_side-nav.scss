@@ -2,6 +2,9 @@
   width: 50vw;
   background-color: $nav-background;
   color: $nav-color;
+  @media screen and (max-width: $lil-boy) {
+    width: 80vw;
+  }
 }
 
 .side-nav li {
@@ -9,14 +12,26 @@
 
 }
 
+// #sidenav-overlay { z-index: 1; }
+
 .side-nav-links li a {
   text-transform: uppercase;
+  font-weight: bold;
   margin: 5% 10%;
   background-color: $nav-li;
   color: $nav-color;
   font-size: 7rem;
   padding: 10% 0;
   line-height: 10px;
+  @media screen and (max-width: $big-boy) {
+    font-size: 5.8rem;
+  }
+  @media screen and (max-width: $mid-boy) {
+    font-size: 4.5rem;
+  }
+  @media screen and (max-width: $lil-boy) {
+    font-size: 3.5rem;
+  }
   &:hover {
     background-color: $white;
     text-decoration: none;
@@ -32,12 +47,7 @@
   margin: 0 auto;
   text-align: center;
 }
-// #mobile-demo > li:nth-child(7), #mobile-demo > li:nth-child(8) > a{
-//   display: inline-block;
-//   background-color: $nav-color;
-//   font-size: em(10);
-// }
-//
+
 #mobile-demo > p {
   text-align: center;
   font-size: em(30);
@@ -53,9 +63,7 @@
 #mobile-demo > a {
     display: inline-block;
 }
-// .side nav li a {
-//   color: $nav-color;
-// }
+
 
 #side-logo {
   width: 30%;

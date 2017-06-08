@@ -39,9 +39,21 @@
   line-height: 90px;
 }
 
+@mixin headline-big-boy {
+  font-size: 60px;
+  line-height: 60px;
+}
+
 @mixin date {
   font-size: 12px;
   font-family: 'roboto', sans-serif;
   text-align: left;
   color: $white;
+}
+
+@mixin hover-effect {
+  color: $featured-color;
+  transition: 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
 }

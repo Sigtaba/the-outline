@@ -1,29 +1,46 @@
 .containerx {
   width: 90vw;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   z-index: 100;
+  @media screen and (max-width: $big-boy) {
+    width: 85vw;
+  }
+  @media screen and (max-width: $lil-boy) {
+    width: 100%;
+  }
 }
 
 .featured-container {
   background-color: $background-color;
   color: $white;
   padding: 8% 0;
+  @media screen and (min-width: $fat-boy) {
+    padding: 3% 0;
+  }
+  @media screen and (max-width: $lil-boy) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
-.toothy {
-  max-width: 100%;
-}
 .story-container {
   width: 85%;
   margin: 0 auto;
   border: em(20) solid;
   border-bottom-style: none;
   border-color: $featured-color $featured-color $background-color $featured-color;
+  @media screen and (max-width: $lil-boy) {
+    border: none;
+  }
+  @media screen and (max-width: $lil-boy) {
+    width: 100%;
+    // margin: 10% 0
+  }
 }
 
 .main-story-container {
-  margin: 0 auto;
+  margin: 10px auto;
   background-image: url(../img/featured/mainguy2.jpg);
   background-size: 800px;
   background-position: center;
@@ -31,15 +48,33 @@
   text-align: left;
   padding: 60px;
   max-width: 900px;
+  @media screen and (max-width: $big-boy) {
+    max-width: 600px;
+  }
+  @media screen and (max-width: $mid-boy) {
+    max-width: 450px;
+  }
+  @media screen and (max-width: $lil-boy) {
+    max-width: none;
+    text-align: center;
+  }
   & p {
     @include date;
+    @media screen and (max-width: $lil-boy) {
+      text-align: center;
+    }
   }
   & h1 {
     @include headline;
+    @media screen and (max-width: $big-boy) {
+      @include headline-big-boy;
+    }
+    @media screen and (max-width: $lil-boy) {
+      font-size: 36px;
+      line-height: 36px;
+    }
     &:hover {
-      color: $featured-color;
-      transition: 0.3s ease;
-      text-decoration: none;
+      @include hover-effect;
     }
   }
   & .subhead {
@@ -47,6 +82,10 @@
     font-family: 'Playfair Display', serif;
     margin-top: -25px;
     font-weight: lighter;
+    @media screen and (max-width: $lil-boy) {
+      font-size: 15px;
+      margin-top: -15px;
+    }
   }
 }
 
@@ -58,9 +97,27 @@
   margin: 0 auto;
   padding: 1% 6%;
   max-width: 900px;
+  @media screen and (max-width: $big-boy) {
+    max-width: 600px;
+  }
+  @media screen and (max-width: $mid-boy) {
+    max-width: 450px;
+  }
+  @media screen and (max-width: $lil-boy) {
+    max-width: none;
+  }
 
   & .row {
     height: 200px;
+    @media screen and (max-width: $big-boy) {
+      height: 280px;
+    }
+    @media screen and (max-width: $mid-boy) {
+      height: 165px;
+    }
+    @media screen and (max-width: $lil-boy) {
+      height: 140px;
+    }
   }
   & .col {
     padding: 10px;
@@ -75,6 +132,19 @@
     background-size: auto 4px;
     background-repeat: repeat-x;
     border: 5px solid $background-color;
+    @media screen and (max-width: $big-boy) {
+      background-position: 10em 8.5em;
+    }
+    @media screen and (max-width: $mid-boy) {
+      background-position: 10em 4.5em;
+    }
+    @media screen and (max-width: $lil-boy) {
+      background-position: 10em 3.7em;
+    }
+  }
+  & h5:hover {
+      @include hover-effect;
+      // Animation shorthand works the same as the CSS3 animation shorthand
   }
   & p {
     @include date;
@@ -85,6 +155,23 @@
     position: absolute;
     right: 0px;
     bottom: 0px;
+    @media screen and (max-width: $lil-boy) {
+      width: 60px;
+    }
+  }
+  & button {
+    display: block;
+    margin: 0 auto;
+  }
+}
 
+#button-house {
+  margin-top: 50px;
+  @media screen and (max-width: $mid-boy) {
+    margin-top: 650px;
+  }
+  @media screen and (max-width: $lil-boy) {
+    margin-top: 560px;
+    margin-bottom: 50px;
   }
 }
